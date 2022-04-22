@@ -1,0 +1,47 @@
+version: '3.7'
+services:
+  app:
+    build: app
+    container_name: appserver
+    hostname: appserver
+    networks:
+      - example-net
+
+  calc:
+    build: calc
+    container_name: calcserver
+    hostname: calcserver
+    networks:
+      - example-net
+
+  soma:
+    build: soma
+    container_name: somaserver
+    hostname: somaserver
+    networks:
+      - example-net
+
+  sub:
+    build: sub
+    container_name: subserver
+    hostname: subserver
+    networks:
+      - example-net
+
+  nginx:
+    build: nginx
+    container_name: nginx
+    hostname: nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - app
+      - calc
+      - soma
+      - sub
+    networks:
+      - example-net
+
+networks:
+  example-net:
+    external: true
