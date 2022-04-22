@@ -1,6 +1,8 @@
 # <a href="https://github.com/Jorgylemos/Node_Docker_Nginx" target="_blank"> <img src="https://img.icons8.com/color/100/000000/docker.png" alt="git" width="40" height="40"/> </a> **Projeto Nodejs/Docker/Nginx**
 
-> Projeto desenvolvido para a matéria de WEBII.
+> Projeto desenvolvido por Vinicius Augusto & Jorge Lemos.
+
+> Desenvolvido para a matéria de WEBII
 
 ## Comandos
 
