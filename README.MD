@@ -4,20 +4,24 @@
 
 ## Comandos
 
-### 1° Clonar repositório
+### Clonar repositório
 
 ```
-$ git clone {link do repositório} 
+$ git clone https://github.com/Jorgylemos/Node_Docker_Nginx
 ```
-
 
 ### 1° Comando
+```
+$ docker network create example-net
+```
+
+### 2° Comando
 
 ```
 $ docker-compose up --build -d 
 ```
 
-### 2° Comando
+### 3° Comando
 
 ```
 $ docker ps
